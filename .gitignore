@@ -99,3 +99,9 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# node modules
+node_modules
+
+# client public folder
+client/public/

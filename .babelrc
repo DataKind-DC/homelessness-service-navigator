@@ -1,0 +1,15 @@
+{
+  "presets": [
+    "react",
+    [
+      "env",
+      {
+        "targets": {
+          "browsers": "last 2 versions"
+        },
+        "modules": false
+      }
+    ]
+  ],
+  "plugins": ["babel-plugin-transform-class-properties"]
+}
