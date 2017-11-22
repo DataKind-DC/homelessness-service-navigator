@@ -1,0 +1,8 @@
+{
+  "name": "homelessness-service-navigator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/DataKind-DC/homelessness-service-navigator.git",
+  "author": "chououtside <chouming3@gmail.com>",
+  "license": "MIT"
+}
