@@ -105,3 +105,6 @@ node_modules
 
 # client public folder
 client/public/
+
+# ds store
+.DS_Store
