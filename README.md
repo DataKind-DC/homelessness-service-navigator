@@ -13,7 +13,7 @@ purposes. See deployment for notes on how to deploy the project on a live system
 
 1. npm
 
-* [How to install npm - The npm Blog](http://blog.npmjs.org/post/85484771375/how-to-install-npm)
+	* [How to install npm - The npm Blog](http://blog.npmjs.org/post/85484771375/how-to-install-npm)
 
 2. Yarn
 
