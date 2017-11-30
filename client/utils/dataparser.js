@@ -3,6 +3,7 @@ import serviceKeys from '../data/serviceKeys';
 
 export default function(data) {
 	return _.map(data, row => {
+		let id = row.OBJECTID;
 		let organizationName = row.ORGANIZATION_NAME;
 		let programName = row.PROGRAM_NAME;
 		let description = row.DESCRIPTION;
@@ -17,6 +18,7 @@ export default function(data) {
 		});
 
 		return {
+			id,
 			organizationName,
 			programName,
 			description,
