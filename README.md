@@ -35,10 +35,10 @@ Install Packages
 yarn install
 ```
 
-Run webpack dev server
+Start Web App
 
 ```
-webpack-dev-server
+yarn run start
 ```
 
 Application should be running on http://localhost:8080/
