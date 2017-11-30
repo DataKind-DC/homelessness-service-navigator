@@ -10,6 +10,7 @@ describe('dataparser function should parse data to return a workable json object
 	});
 
 	it('should have the following properties for each element in data array', () => {
+		expect(firstElementInResult).toHaveProperty('id', '10');
 		expect(firstElementInResult).toHaveProperty('organizationName', 'Catholic Charities');
 		expect(firstElementInResult).toHaveProperty('programName', 'Refugee Center');
 		expect(firstElementInResult).toHaveProperty(
