@@ -1,6 +1,6 @@
 # Recommended Filters for Homeless Services App
 
-* What language do you prefer?
+* What is your primary language?
 * Are you by yourself?  
     * Are you with another adult (e.g. spouse, partner, relative)? 
     * Are you with any children? 
