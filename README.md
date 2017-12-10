@@ -43,6 +43,11 @@ yarn run start
 
 Application should be running on http://localhost:8080/
 
+## Style Guide
+
+* [Javascript](./docs/javascriptStyleGuide.md)
+* [React](./docs/reactStyleGuide.md)
+
 ## Running the tests
 
 ### Unit Tests
