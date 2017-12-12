@@ -34,7 +34,7 @@ Install Packages
 ```
 yarn install
 ```
-
+`
 Start Web App
 
 ```
@@ -42,6 +42,12 @@ yarn run start
 ```
 
 Application should be running on http://localhost:8080/
+
+## Style Guide
+
+* [Javascript](./docs/javascriptStyleGuide.md)
+* [React](./docs/reactStyleGuide.md)
+* CSS (Coming Soon!)
 
 ## Running the tests
 
