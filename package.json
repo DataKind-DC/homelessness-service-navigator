@@ -33,6 +33,6 @@
     "webpack-dev-server": "^2.9.4"
   },
   "lint-staged": {
-    "*.{js,jsx,json,css,md}": ["prettier --write", "git add"]
+    "*.{js,jsx,json,css,md}": ["prettier --write --single-quote", "git add"]
   }
 }
