@@ -105,6 +105,7 @@ Coming Soon
 ## Authors
 
 * **Alex Chou** - _Initial work_ - [Chououtside](https://github.com/chououtside)
+* **Katie Mitchell** - _Data Ambassador_ - [cimitchell](https://github.com/cimitchell)
 
 See also the list of [contributors](https://github.com/DataKind-DC/homelessness-service-navigator/contributors) who
 participated in this project.
