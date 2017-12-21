@@ -1,38 +1,18 @@
 {
-  "name": "homelessness-service-navigator",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository":
-    "https://github.com/DataKind-DC/homelessness-service-navigator.git",
-  "author": "chououtside <chouming3@gmail.com>",
-  "license": "MIT",
+  "name": "homeless-serv-nav",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "lodash": "^4.17.4",
-    "prop-types": "^15.6.0",
-    "react": "^16.1.1",
-    "react-dom": "^16.1.1"
-  },
-  "scripts": {
-    "test": "jest",
-    "start": "webpack-dev-server",
-    "precommit": "lint-staged"
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
   },
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
-    "dsv-loader": "^2.0.0",
-    "eslint": "^4.11.0",
-    "jest": "^21.2.1",
-    "path": "^0.12.7",
-    "prettier": "^1.8.2",
-    "webpack": "^3.8.1",
-    "webpack-dev-server": "^2.9.4"
+    "react-scripts": "1.0.17"
   },
-  "lint-staged": {
-    "*.{js,jsx,json,css,md}": ["prettier --write --single-quote", "git add"]
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   }
 }
