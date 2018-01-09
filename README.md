@@ -60,22 +60,16 @@ npm install -g webpack-dev-server
 Install Packages
 
 ```
-yarn install
+npm i
 ```
 `
 Start Web App
 
 ```
-yarn run start
+npm run start
 ```
 
 Application should be running on http://localhost:8080/
-
-## Style Guide
-
-* [Javascript](./docs/javascriptStyleGuide.md)
-* [React](./docs/reactStyleGuide.md)
-* CSS (Coming Soon!)
 
 ## Running the tests
 
@@ -84,12 +78,8 @@ Application should be running on http://localhost:8080/
 Executes unit tests for the front end using Jest
 
 ```
-yarn run test
+npm run test
 ```
-
-## Deployment
-
-Coming Soon
 
 ## Built With
 
@@ -106,6 +96,8 @@ Coming Soon
 
 * **Alex Chou** - _Initial work_ - [Chououtside](https://github.com/chououtside)
 * **Katie Mitchell** - _Data Ambassador_ - [cimitchell](https://github.com/cimitchell)
+* **Evan Gaskin** - _Front End_ - [evangaskinarts](https://github.com/evangaskinarts)
+* **Solomon Rubin** - _Supplimental Technical Work_ - [Serubin](https://github.com/Serubin)
 
 See also the list of [contributors](https://github.com/DataKind-DC/homelessness-service-navigator/contributors) who
 participated in this project.
