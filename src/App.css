@@ -248,7 +248,7 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 #header-aux {
-  height: 60px;
+  height: 43px;
   background: white;
   border-bottom: 1px solid #DCE7F7;
   border-bottom: 1px solid #28756a;
@@ -260,11 +260,11 @@ h1,h2,h3,h4,h5,h6,p {
   /* box-shadow: 0px 2px 10px rgba(220, 231, 247, 0.2);
   box-shadow: 0px 2px 12px rgba(0,0,0,0.05); */
   overflow-y: scroll;
-
+  -webkit-overflow-scrolling: touch;
 
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
-  padding: 20px 20px 0px 20px;
+  padding: 3px 20px 0px 20px;
   opacity: 0;
   box-shadow: 0px 2px 12px rgba(0,0,0,0.3);
 
@@ -276,33 +276,43 @@ h1,h2,h3,h4,h5,h6,p {
   letter-spacing: .1em;
   text-transform: uppercase;
   margin-right: 20px;
+  color: black;
 }
 
 @keyframes joltDown {
-  0% {transform: translateY(-100%); opacity: 0; height: 20px;}
-  70% {transform: translateY(-3px); opacity: 1; height: 60px;}
-  100% {transform: translateY(-0px); }
+  0% {transform: translateY(-100%); opacity: 0;}
+  70% {transform: translateY(-3px); opacity: 1;}
+  100% {transform: translateY(0px); }
 }
 
 .header-aux-down {
+  -moz-animation: joltDown .8s ease-in-out;
   animation: joltDown .4s ease-in-out;
-  transform: translateY(-0px) !important;
+  transform: translateY(0px) !important;
   opacity: 1 !important;
-  margin-top: -20px;
+  margin-top: -3px;
 }
 
-@keyframes joltDownInit {
-  0% {transform: translateY(-100%); opacity: 0; height: 20px;}
-  50% {transform: translateY(-100%); opacity: 0; height: 20px;}
+/* @keyframes joltDownInit {
+  0% {transform: translateY(-100%); opacity: 0; height: 40px;}
+  50% {transform: translateY(-100%); opacity: 0; height: 40px;}
   85% {transform: translateY(-3px); opacity: 1; height: 60px;}
   100% {transform: translateY(-0px); }
+} */
+
+@keyframes joltDownInit {
+  0% {transform: translateY(-100%); opacity: 0 };
+  50% {transform: translateY(-100%); opacity: 0;}
+  85% {transform: translateY(-3px); opacity: 1;}
+  100% {transform: translateY(0px); }
 }
 
 .header-aux-down-init {
+  -moz-animation: joltDownInit .8s ease-in-out;
   animation: joltDownInit .8s ease-in-out;
   transform: translateY(-0px) !important;
   opacity: 1 !important;
-  margin-top: -20px;
+  margin-top: -3px;
 }
 
 
@@ -349,11 +359,11 @@ h1,h2,h3,h4,h5,h6,p {
   text-transform: uppercase;
 }
 
-.filter-block:before {
+/* .filter-block:before {
   content: '▾';
   margin: -3px 6px 0px 0px;
-  font-family: Verdana;
-}
+  font-family: 'Verdana', Verdana, sans-serif;
+} */
 
 
 
@@ -375,6 +385,7 @@ h1,h2,h3,h4,h5,h6,p {
     display: flex;
     align-items: center;
     animation: moveInUp 1s ease-in-out;
+    cursor: pointer;
 }
 
 .journey-prompt:hover {
@@ -402,7 +413,8 @@ h1,h2,h3,h4,h5,h6,p {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    margin-top: 25px;
+    top: 28px;
+    -moz-animation: fadeInOut 1s ease-in-out infinite;
     animation: fadeInOut 1s ease-in-out infinite;
 }
 

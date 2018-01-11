@@ -18,7 +18,7 @@ export class Journey extends Component {
   render () {
     return (
      <div className="journey-prompt">
-        <h4 className="journey-prompt-text">Click here for personalized search questionaire</h4>
+        <h4 className="journey-prompt-text">Click here for personalized search questionnaire</h4>
         <div className="journey-prompt-arrow" style={{backgroundImage: `url('src-icons/arrow2.svg')`}}></div>
      </div>
     );
