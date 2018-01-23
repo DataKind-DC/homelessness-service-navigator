@@ -9,8 +9,8 @@ body, input {
 }
 
 body {
-  background-image: url('mapexample.png');
-  background-size: cover;
+  /*background-image: url('mapexample.png');
+  background-size: cover;*/
 }
 
 body h1,h2,h3,h4,h5,h6 {
