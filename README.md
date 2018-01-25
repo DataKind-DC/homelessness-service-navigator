@@ -28,9 +28,10 @@ Recommended Viewing: [Intro to Emergency Shelter for Individuals](https://youtu.
 
 ## Datasets:
 
-[Homeless Service Facilities](http://opendata.dc.gov/datasets/homeless-service-facilities)
-[Homeless Facility Shuttle Stops](http://opendata.dc.gov/datasets/567f007f2d2b4d2b9afe08b9eb620182_52)
-[Homeless Shelter Locations](http://opendata.dc.gov/datasets/87c5e68942304363a4578b30853f385d_25)
+* [Homeless Service Facilities](http://opendata.dc.gov/datasets/homeless-service-facilities)
+* [Homeless Facility Shuttle Stops](http://opendata.dc.gov/datasets/567f007f2d2b4d2b9afe08b9eb620182_52)
+* [Homeless Shelter Locations](http://opendata.dc.gov/datasets/87c5e68942304363a4578b30853f385d_25)
+* [Google Sheet with Revised Data to align with Human Services Data Specification](https://docs.google.com/spreadsheets/d/1BQdht7Df-PyJVbzk4ykk3mWps6hgNkC_C8NMKX_drV4/edit?usp=sharing)
 
 ## Getting Started
 
