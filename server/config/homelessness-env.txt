@@ -1,0 +1,44 @@
+# This file may be used to create an environment using:
+# $ conda create --name <env> --file <this file>
+# platform: win-64
+@EXPLICIT
+https://conda.anaconda.org/conda-forge/noarch/arrow-0.10.0-py_1.tar.bz2
+https://conda.anaconda.org/conda-forge/win-64/asn1crypto-0.22.0-py35_0.tar.bz2
+https://conda.anaconda.org/conda-forge/win-64/binaryornot-0.4.4-py35_0.tar.bz2
+https://conda.anaconda.org/conda-forge/win-64/ca-certificates-2017.11.5-0.tar.bz2
+https://repo.continuum.io/pkgs/main/win-64/certifi-2017.11.5-py35h456c6ae_0.tar.bz2
+https://conda.anaconda.org/conda-forge/win-64/cffi-1.11.2-py35_0.tar.bz2
+https://conda.anaconda.org/conda-forge/win-64/chardet-3.0.4-py35_0.tar.bz2
+https://conda.anaconda.org/conda-forge/noarch/click-6.7-py_1.tar.bz2
+https://conda.anaconda.org/conda-forge/win-64/cookiecutter-1.6.0-py35_0.tar.bz2
+https://conda.anaconda.org/conda-forge/win-64/cryptography-2.1.4-py35_0.tar.bz2
+https://repo.continuum.io/pkgs/main/win-64/django-1.11.8-py35hd476221_0.tar.bz2
+https://conda.anaconda.org/conda-forge/win-64/django-environ-0.4.4-py35_0.tar.bz2
+https://conda.anaconda.org/conda-forge/win-64/future-0.16.0-py35_0.tar.bz2
+https://conda.anaconda.org/conda-forge/win-64/idna-2.6-py35_1.tar.bz2
+https://conda.anaconda.org/conda-forge/win-64/jinja2-2.10-py35_0.tar.bz2
+https://conda.anaconda.org/conda-forge/win-64/jinja2-time-0.2.0-py35_1.tar.bz2
+https://repo.continuum.io/pkgs/main/win-64/krb5-1.14.2-h63dfc2a_6.tar.bz2
+https://repo.continuum.io/pkgs/main/win-64/libpq-9.6.6-hfe3f2bf_0.tar.bz2
+https://conda.anaconda.org/conda-forge/win-64/markupsafe-1.0-py35_0.tar.bz2
+https://conda.anaconda.org/conda-forge/win-64/openssl-1.0.2n-vc14_0.tar.bz2
+https://repo.continuum.io/pkgs/main/win-64/pip-9.0.1-py35h691316f_4.tar.bz2
+https://conda.anaconda.org/conda-forge/win-64/poyo-0.4.1-py35_0.tar.bz2
+https://repo.continuum.io/pkgs/main/win-64/psycopg2-2.7.3.2-py35hbacfff4_0.tar.bz2
+https://conda.anaconda.org/conda-forge/win-64/pycparser-2.18-py35_0.tar.bz2
+https://conda.anaconda.org/conda-forge/win-64/pyopenssl-17.2.0-py35_0.tar.bz2
+https://conda.anaconda.org/conda-forge/win-64/pysocks-1.6.8-py35_1.tar.bz2
+https://repo.continuum.io/pkgs/free/win-64/python-3.5.2-0.tar.bz2
+https://conda.anaconda.org/conda-forge/win-64/python-dateutil-2.6.1-py35_0.tar.bz2
+https://conda.anaconda.org/conda-forge/noarch/pytz-2017.3-py_2.tar.bz2
+https://conda.anaconda.org/conda-forge/win-64/requests-2.18.4-py35_1.tar.bz2
+https://repo.continuum.io/pkgs/main/win-64/setuptools-38.4.0-py35_0.tar.bz2
+https://conda.anaconda.org/conda-forge/win-64/six-1.11.0-py35_1.tar.bz2
+https://repo.continuum.io/pkgs/main/win-64/tk-8.6.7-hcb92d03_3.tar.bz2
+https://conda.anaconda.org/conda-forge/win-64/urllib3-1.22-py35_0.tar.bz2
+https://repo.continuum.io/pkgs/main/win-64/vc-14-h0510ff6_3.tar.bz2
+https://repo.continuum.io/pkgs/main/win-64/vs2015_runtime-14.0.25123-3.tar.bz2
+https://repo.continuum.io/pkgs/main/win-64/wheel-0.30.0-py35h38a90bc_1.tar.bz2
+https://conda.anaconda.org/conda-forge/win-64/whichcraft-0.4.1-py35_0.tar.bz2
+https://conda.anaconda.org/conda-forge/win-64/win_inet_pton-1.0.1-py35_1.tar.bz2
+https://repo.continuum.io/pkgs/main/win-64/wincertstore-0.2-py35hfebbdb8_0.tar.bz2
