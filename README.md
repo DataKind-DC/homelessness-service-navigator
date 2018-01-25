@@ -87,6 +87,7 @@ npm run test
 * [Webpack](https://webpack.js.org/) - Module bundler
 * [Jest](https://facebook.github.io/jest/) - Testing Framework
 * [Yarn](https://yarnpkg.com/en/) - Dependency Management
+* [Django] (https://www.djangoproject.com/) Server
 
 ## Contributing
 
@@ -98,6 +99,7 @@ Coming Soon
 * **Katie Mitchell** - _Data Ambassador_ - [cimitchell](https://github.com/cimitchell)
 * **Evan Gaskin** - _Front End_ - [evangaskinarts](https://github.com/evangaskinarts)
 * **Solomon Rubin** - _Supplimental Technical Work_ - [Serubin](https://github.com/Serubin)
+* **William Ratcliff** _Back End/ DataKind Chapter Leater [williamratcliff]
 
 See also the list of [contributors](https://github.com/DataKind-DC/homelessness-service-navigator/contributors) who
 participated in this project.
