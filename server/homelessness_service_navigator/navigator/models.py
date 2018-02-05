@@ -14,7 +14,7 @@ class Category(models.Model):
 
 class Organization(models.Model):
     service = models.ForeignKey(Service)
-    category_id = models.IntegerField() # Was this an attempt at an index
+    #category_id = models.IntegerField() # Was this an attempt at an index
     hour_open = models.DateTimeField()
     hour_closed = models.DateTimeField()
 
