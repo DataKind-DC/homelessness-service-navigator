@@ -109,3 +109,6 @@ node_modules
 #Wing IDE
 .wpr
 .wpu
+
+# vim
+*.swp
