@@ -56,6 +56,7 @@ LOCAL_APPS = [
     # custom users app
     'homelessness_service_navigator.users.apps.UsersConfig',
     # Your stuff: custom apps go here
+    'homelessness_service_navigator.navigator',
 ]
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
