@@ -48,7 +48,8 @@ THIRD_PARTY_APPS = [
     'crispy_forms',  # Form layouts
     'allauth',  # registration
     'allauth.account',  # registration
-    'allauth.socialaccount',  # registration
+    'allauth.socialaccount',  # registration'
+     'rest_framework',  #rest api  
 ]
 
 # Apps specific for this project go here.
@@ -56,7 +57,9 @@ LOCAL_APPS = [
     # custom users app
     'homelessness_service_navigator.users.apps.UsersConfig',
     # Your stuff: custom apps go here
-    'homelessness_service_navigator.navigator',
+    #'homelessness_service_navigator.navigator',
+    'navigator',
+    'api'
 ]
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
@@ -77,7 +80,7 @@ MIDDLEWARE = [
 # MIGRATIONS CONFIGURATION
 # ------------------------------------------------------------------------------
 MIGRATION_MODULES = {
-    'sites': 'homelessness_service_navigator.contrib.sites.migrations'
+    #'sites': 'homelessness_service_navigator.contrib.sites.migrations'
 }
 
 # DEBUG
@@ -288,3 +291,6 @@ ADMIN_URL = r'^admin/'
 
 # Your common stuff: Below this line define 3rd party library settings
 # ------------------------------------------------------------------------------
+
+REST_FRAMEWORK = {
+}
