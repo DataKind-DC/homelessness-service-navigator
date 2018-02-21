@@ -9,16 +9,16 @@ export const GET_SERVICES_REQUEST = "GET_SERVICES_REQUEST";
 export const GET_SERVICES_SUCCESS = "GET_SERVICES_SUCCESS";
 export const GET_SERVICES_FAILURE = "GET_SERVICES_FAILURE";
 
-export const GET_SERVICE = "GET_SERVICE";
-export const GET_SERVICE_REQUEST = "GET_SERVICE_REQUEST";
-export const GET_SERVICE_SUCCESS = "GET_SERVICE_SUCCESS";
-export const GET_SERVICE_FAILURE = "GET_SERVICE_FAILURE";
-
 export function getServices() {
   return dispatch => {
     dispatch(getServicesRequest());
     fetch("http://localhost:3000/api/services")
-      .then(res => res.json())
+      .then(res => {
+        if (!res.ok) {
+          throw new Error(`${res.status} ${res.statusText}`);
+        }
+        return res.json();
+      })
       .then(json => dispatch(getServicesSuccess(json)))
       .catch(error => dispatch(getServicesFailure(error)));
   };
@@ -40,36 +40,6 @@ export function getServicesSuccess(data) {
 export function getServicesFailure(error) {
   return {
     type: GET_SERVICES_FAILURE,
-    error
-  };
-}
-
-export function getService(id) {
-  return dispatch => {
-    dispatch(getServiceRequest());
-    fetch(`http://localhost:3000/api/services/${id}`)
-      .then(res => res.json())
-      .then(json => dispatch(getServiceSuccess(json)))
-      .catch(error => dispatch(getServiceFailure(error)));
-  };
-}
-
-export function getServiceRequest() {
-  return {
-    type: GET_SERVICE_REQUEST
-  };
-}
-
-export function getServiceSuccess(data) {
-  return {
-    type: GET_SERVICE_SUCCESS,
-    data
-  };
-}
-
-export function getServiceFailure(error) {
-  return {
-    type: GET_SERVICE_FAILURE,
     error
   };
 }

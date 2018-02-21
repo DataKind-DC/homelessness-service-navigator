@@ -1,12 +1,4 @@
-import Actions from "./actions";
+import servicesReducer from "./services/reducers";
+import { combineReducers } from "redux";
 
-const initialState = {};
-
-export function someReducer(state = initialState, action) {
-  switch (action.type) {
-    default:
-      return state;
-  }
-}
-
-export default someReducer;
+export default combineReducers({ servicesReducer });
