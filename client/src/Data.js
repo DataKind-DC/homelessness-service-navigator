@@ -35,8 +35,6 @@ var Filters = [
         subcat: [],
         active: false
     }
-
 ];
-
 
 export default Filters;
