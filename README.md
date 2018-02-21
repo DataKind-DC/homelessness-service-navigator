@@ -84,17 +84,17 @@ npm run test
 
 ## Getting started with Django
 
-install postgresql
-create a database (homelessness)
-create a user (see config/settings/local.py)
-install conda (https://conda.io/docs/user-guide/install/index.html) #a python environment/package manager
-conda env create -f config/homelessness-env.yml  #install the python environment from the yml file
-activate homelessness  #activate the environment
-cd server
-python manage.py makemigrations #prepare the database
-python manage.py migrate  #populate the database
-python manage.py createsuperuser  #create super user
-python manage.py runserver
+install postgresql  
+create a database (homelessness)  
+create a user (see config/settings/local.py)  
+install conda (https://conda.io/docs/user-guide/install/index.html) #a python environment/package manager  
+conda env create -f config/homelessness-env.yml  #install the python environment from the yml file  
+activate homelessness  #activate the environment  
+cd server  
+python manage.py makemigrations #prepare the database  
+python manage.py migrate  #populate the database  
+python manage.py createsuperuser  #create super user  
+python manage.py runserver  
 
 
 
