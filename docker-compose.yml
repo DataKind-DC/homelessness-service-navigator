@@ -2,13 +2,21 @@ version: '3'
 
 services:
   db:
-    image: postgres
+    image: postgres:9.6
+    volumes:
+      - pgdata:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
   web:
     build: .
-    command: python3 manage.py runserver 0.0.0.0:8000
+    image: homelessnessapp
     volumes:
-      - .:/usr/src/app
+      - .:/app
     ports:
       - "8000:8000"
     depends_on:
       - db
+
+volumes:
+  pgdata:

@@ -1,13 +1,13 @@
- FROM python:3
+FROM python:3.6
 
- ENV PYTHONUNBUFFERED 1
+WORKDIR /app
 
- RUN echo 'export PATH=/opt/conda/bin:$PATH' > /etc/profile.d/conda.sh && \
-    wget --quiet https://repo.continuum.io/miniconda/Miniconda2-4.3.27-Linux-x86_64.sh -O ~/miniconda.sh && \
-    /bin/bash ~/miniconda.sh -b -p /opt/conda && \
-    rm ~/miniconda.sh
- COPY . /code/
+ADD /server/config/requirements.txt /app/config/requirements.txt
 
- RUN /opt/conda/bin/conda create --name dev --file /code/server/config/homelessness-env.txt
+RUN pip install -r config/requirements.txt
 
- ENV PATH /opt/conda/bin:$PATH
+ADD . /app
+
+EXPOSE 8000
+
+cmd ["python", "server/manage.py", "runserver", "0.0.0.0:8000"]
