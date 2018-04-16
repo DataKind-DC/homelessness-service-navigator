@@ -4,9 +4,7 @@ from __future__ import unicode_literals
 
 from django.db import migrations, models
 
-def load_services(apps,schema_editor):
-    Service=apps.get_model("navigator", "Service")
-    services=['ACCESSIBILITY_SERVICES', 
+SERVICES=['ACCESSIBILITY_SERVICES', 
               'ADULT_LITERACY', 
               'ART_THERAPY', 
               'ASSESSMENT',
@@ -48,6 +46,11 @@ def load_services(apps,schema_editor):
               'TRANSPORTATION', 
               'VOCATIONAL_TRAINING', 
               ]
+
+
+def load_services(apps,schema_editor):
+    Service=apps.get_model("navigator", "Service")
+    
     id=0
     for service in services:
         service_listed=Service(name=service,id=id)

@@ -82,21 +82,24 @@ Executes unit tests for the front end using Jest
 npm run test
 ```
 
-## Getting started with Django
+## Getting started with Django + Docker
 
-install postgresql  
-create a database (homelessness)  
-create a user (see config/settings/local.py)  
-install conda (https://conda.io/docs/user-guide/install/index.html) #a python environment/package manager  
-conda env create -f config/homelessness-env.yml  #install the python environment from the yml file  
-activate homelessness  #activate the environment  
-cd server  
-python manage.py makemigrations #prepare the database  
-python manage.py migrate  #populate the database  
-python manage.py createsuperuser  #create super user  
-python manage.py runserver  
+Install [Docker](https://docs.docker.com/install/)
 
+1. Create a Docker image
+```
+docker build -t homelessnessapp .
+```
+2. Start the application
+```
+docker-compose up
+```
+3. In a separate terminal tab, run the migrations to the database
+```
+docker-compose exec web python server/manage.py migrate
+```
 
+After running these steps, you can access the server application at localhost:8000. 
 
 ## Built With
 
