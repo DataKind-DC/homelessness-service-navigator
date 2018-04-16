@@ -1,9 +1,9 @@
 from rest_framework import serializers
 
-from .models import Service
+from .models import Service, OrganizationInfo
+
 
 class ServiceSerializer(serializers.HyperlinkedModelSerializer):
-    #user = serializers.ReadOnlyField(source='user.username')
 
     class Meta:
         model = Service
@@ -13,3 +13,11 @@ class ServiceSerializer(serializers.HyperlinkedModelSerializer):
                 'view_name': 'api:service-detail',
             }
         }
+
+
+class OrganizationSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = OrganizationInfo
+        fields = ('id', 'name', 'url', 'phone_number', 'street', 'zipcode',
+                  'city', 'state', 'services')

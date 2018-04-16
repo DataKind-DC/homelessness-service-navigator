@@ -110,5 +110,12 @@ node_modules
 .wpr
 .wpu
 
+# VS Code
+.vscode
+
+# PyCharm
+.idea
+
+
 # vim
 *.swp
