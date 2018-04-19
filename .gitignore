@@ -106,3 +106,16 @@ node_modules
 # ds store
 .DS_Store
 
+#Wing IDE
+.wpr
+.wpu
+
+# VS Code
+.vscode
+
+# PyCharm
+.idea
+
+
+# vim
+*.swp

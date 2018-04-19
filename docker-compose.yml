@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  db:
+    image: postgres:9.6
+    volumes:
+      - pgdata:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+  web:
+    build: .
+    image: homelessnessapp
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+
+volumes:
+  pgdata:

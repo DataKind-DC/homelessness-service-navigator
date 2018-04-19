@@ -1,0 +1,16 @@
+django-environ==0.4.4
+django==1.11.8
+numpy==1.14.0
+pandas==0.22.0
+pip==9.0.1
+psycopg2==2.7.3.2
+django-allauth==0.35.0
+django-coverage-plugin==1.5.0
+django-crispy-forms==1.7.0
+django-debug-toolbar==1.9.1
+django-extensions==1.9.9
+django-model-utils==3.1.1
+django-redis==4.8.0
+django-reset-migrations==0.3.1
+django-test-plus==1.0.22
+djangorestframework==3.7.7

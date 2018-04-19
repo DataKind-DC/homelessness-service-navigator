@@ -28,9 +28,10 @@ Recommended Viewing: [Intro to Emergency Shelter for Individuals](https://youtu.
 
 ## Datasets:
 
-[Homeless Service Facilities](http://opendata.dc.gov/datasets/homeless-service-facilities)
-[Homeless Facility Shuttle Stops](http://opendata.dc.gov/datasets/567f007f2d2b4d2b9afe08b9eb620182_52)
-[Homeless Shelter Locations](http://opendata.dc.gov/datasets/87c5e68942304363a4578b30853f385d_25)
+* [Homeless Service Facilities](http://opendata.dc.gov/datasets/homeless-service-facilities)
+* [Homeless Facility Shuttle Stops](http://opendata.dc.gov/datasets/567f007f2d2b4d2b9afe08b9eb620182_52)
+* [Homeless Shelter Locations](http://opendata.dc.gov/datasets/87c5e68942304363a4578b30853f385d_25)
+* [Google Sheet with Revised Data to align with Human Services Data Specification](https://docs.google.com/spreadsheets/d/1BQdht7Df-PyJVbzk4ykk3mWps6hgNkC_C8NMKX_drV4/edit?usp=sharing)
 
 ## Getting Started
 
@@ -81,12 +82,32 @@ Executes unit tests for the front end using Jest
 npm run test
 ```
 
+## Getting started with Django + Docker
+
+Install [Docker](https://docs.docker.com/install/)
+
+1. Create a Docker image
+```
+docker build -t homelessnessapp .
+```
+2. Start the application
+```
+docker-compose up
+```
+3. In a separate terminal tab, run the migrations to the database
+```
+docker-compose exec web python server/manage.py migrate
+```
+
+After running these steps, you can access the server application at localhost:8000. 
+
 ## Built With
 
 * [React](https://reactjs.org/) - The frontend framework used
 * [Webpack](https://webpack.js.org/) - Module bundler
 * [Jest](https://facebook.github.io/jest/) - Testing Framework
 * [Yarn](https://yarnpkg.com/en/) - Dependency Management
+* [Django](https://www.djangoproject.com/) Server
 
 ## Contributing
 
@@ -98,6 +119,7 @@ Coming Soon
 * **Katie Mitchell** - _Data Ambassador_ - [cimitchell](https://github.com/cimitchell)
 * **Evan Gaskin** - _Front End_ - [evangaskinarts](https://github.com/evangaskinarts)
 * **Solomon Rubin** - _Supplimental Technical Work_ - [Serubin](https://github.com/Serubin)
+* **William Ratcliff** - _Back End/ DataKind Chapter Leater [williamratcliff]
 
 See also the list of [contributors](https://github.com/DataKind-DC/homelessness-service-navigator/contributors) who
 participated in this project.
