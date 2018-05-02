@@ -1,4 +1,8 @@
-import fetch from "node-fetch";
+import { 
+  timedFetch,
+  handleNetworkFailure,
+  handleResponse, 
+} from '../utils/fetchHelpers'
 
 // Example of calls to server for information
 //localhost:8000/api/services/:id
@@ -9,19 +13,16 @@ export const GET_SERVICES_REQUEST = "GET_SERVICES_REQUEST";
 export const GET_SERVICES_SUCCESS = "GET_SERVICES_SUCCESS";
 export const GET_SERVICES_FAILURE = "GET_SERVICES_FAILURE";
 
-export function getServices() {
-  return dispatch => {
+export const getServices = () => dispatch => {
     dispatch(getServicesRequest());
-    fetch("http://localhost:3000/api/services")
-      .then(res => {
-        if (!res.ok) {
-          throw new Error(`${res.status} ${res.statusText}`);
-        }
-        return res.json();
-      })
-      .then(json => dispatch(getServicesSuccess(json)))
-      .catch(error => dispatch(getServicesFailure(error)));
-  };
+    timedFetch({
+      url: "http://localhost:3000/api/services",
+      timeout: 10000,
+    })
+    .catch(handleNetworkFailure)
+    .then(handleResponse)
+    .then(json => dispatch(getServicesSuccess(json)))
+    .catch(error => dispatch(getServicesFailure(error)));
 }
 
 export function getServicesRequest() {
