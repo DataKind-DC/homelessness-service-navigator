@@ -52,7 +52,7 @@ def load_services(apps,schema_editor):
     Service=apps.get_model("navigator", "Service")
     
     id=0
-    for service in services:
+    for service in SERVICES:
         service_listed=Service(name=service,id=id)
         id=id+1
         service_listed.save()
