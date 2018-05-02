@@ -1,6 +1,7 @@
 import React from "react"
 import { compose, withProps } from "recompose"
 import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-maps"
+import PropTypes from "prop-types";
 
 const MyMapComponent = compose(
   withProps({
@@ -13,18 +14,34 @@ const MyMapComponent = compose(
   withGoogleMap
 )((props) =>
   <GoogleMap
-    defaultZoom={8}
-    defaultCenter={{ lat: 38.897957, lng: -77.036560 }}
+    defaultZoom={props.defaultZoom}
+    defaultCenter={props.defaultCenter}
   >
   </GoogleMap>
 );
 
 
 export class Map extends React.PureComponent {
+  static defaultProps = {
+    defaultZoom: 8,
+    defaultCenter: {
+      lat: 38.897957,
+      lng: -77.036560
+    }
+  };
+
+  static propTypes = {
+    defaultZoom: PropTypes.number,
+    defaultCenter: PropTypes.shape({
+      lat: PropTypes.number,
+      lng: PropTypes.number
+    })
+  };
 
   render() {
     return (
       <MyMapComponent
+        {...this.props}
       />
     )
   }
