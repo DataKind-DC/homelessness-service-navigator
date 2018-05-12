@@ -16,7 +16,7 @@ class Geolocator {
   getCurrentPosition(){    
     return new Promise((resolve, reject) => {
       this.navigator.geolocation.getCurrentPosition((pos) => {
-        //arrow function for onSucess passing the coordinates into resolve
+        //arrow function for sucess passing the coordinates into resolve
         let latitude = pos.coords.latitude;
         let longitude = pos.coords.longitude;
 
@@ -39,12 +39,12 @@ class App extends Component {
   }
 
   componentDidMount(){
-    //first check for geolocation availability & only run geolocation once
+    //first check for geolocation availability & isLoaded flag
     if ('geolocation' in navigator && !this.isLoaded){
       let myGeolocator = new Geolocator();
-      /*set state with new coordinates if successful
-      on failure set state with error message and load
-      map with default coordinates*/
+      /*Set state with new coordinates if successful. On failure set state with
+        error message and load map with default coordinates. Set isLoaded to
+        true in both cases*/
       myGeolocator.getCurrentPosition()
         .then((result) => {
           this.setState({
@@ -63,6 +63,7 @@ class App extends Component {
         });
     }
     else{
+      //geolocation is unavailable, Map compoment with default props will load
       this.setState({
         isLoaded: true,
         errorMessage: 'Your browser does not support geolocation'
@@ -73,8 +74,9 @@ class App extends Component {
   render() {
     const {errorMessage, isLoaded, center} = this.state;
     if (errorMessage){
-      /*Show error message in an alert box and render the map with
-        default props along with everything else. */
+      /*Error will happen if geolocation is unavailable or coordinates were unable
+        to be obtained via getCurrentPosition. Show error message in an alert box
+        and render the map with default props. */
       alert(errorMessage);
       return (
         <div>
@@ -86,11 +88,12 @@ class App extends Component {
       );
     }
     else if (!isLoaded){
-      /*display a "Loading..." before geolocation finishes.
-        This could be fancier*/
+      //display a "Loading..." before geolocation finishes. This could be fancier
       return <div>Loading...</div>
     }
     else{
+      /*If successful, render the map with custom props
+        passing in the coordinates obtained via getCurrentLocation.*/
       return (
         <div>
         <Map
